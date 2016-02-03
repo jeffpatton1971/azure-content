@@ -48,7 +48,7 @@ The benefits of using CDN to cache Azure data include:
 
 3. Access CDN content
 
-	To access cached content on the CDN, use the CDN URL provided in the portal. For example, the address for a cached blob will be similar to the following: `http://<identifier>.azureedge.net/<myPublicContainer>/<BlobName>`
+	To access cached content on the CDN, use the CDN URL provided in the portal. For example, the address for a cached blob will be similar to the following: `http://<identifier>.azureedge.net/<BlobName>`
 
 ## Caching content from Azure storage
 
@@ -58,8 +58,8 @@ For best performance, use CDN edge caching for delivering blobs less than 10 GB 
 
 When you enable CDN access for a storage account, the Management Portal provides you with a CDN domain name in the following format: `http://<identifier>.azureedge.net/`. This domain name can be used to access blobs in a public container. For example, given a public container named music in a storage account named myaccount, users can access the blobs in that container using either of the following two URLs:
 
-- **Azure Blob service URL**: `http://myAccount.blob.core.windows.net/music/` 
-- **Azure CDN URL**: `http://<identifier>.azureedge.net/music/` 
+- **Azure Blob service URL**: `http://myAccount.blob.core.windows.net/music/sample-file.mp3` 
+- **Azure CDN URL**: `http://<identifier>.azureedge.net/sample-file.mp3` 
 
 ## Caching content from Azure websites
 
